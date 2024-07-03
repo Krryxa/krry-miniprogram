@@ -1,0 +1,4 @@
+<view class="custom-nav" style="margin-top: {{statusBarHeight}}px;">
+  <image src="../../images/logo.png" mode="aspectFit" style="height: {{menuHeight}}px;width: {{menuHeight}}px;"></image>
+  <view class="custom-nav__title">英雄联盟</view>
+</view>

@@ -1,0 +1,10 @@
+.custom-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-nav__title {
+  font-size: small;
+}

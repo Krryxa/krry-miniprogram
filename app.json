@@ -5,9 +5,9 @@
     "pages/detail/detail"
   ],
   "window": {
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Krry",
-    "navigationBarBackgroundColor": "#f60"
+    "navigationBarBackgroundColor": "#fff"
   },
   "tabBar": {
     "color": "#000",
