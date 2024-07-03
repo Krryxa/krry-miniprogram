@@ -21,7 +21,8 @@
       </block>
     </view>
     <view class="usermotto">
-      <navigator url="../detail/detail" class="user-motto">{{motto}}</navigator>
+      <navigator url="../detail/detail?id=k" class="user-motto">{{motto}}</navigator>
     </view>
+    <button class="jump-btn" bind:tap="jumpDetail">js传参进入详情页</button>
   </view>
 </scroll-view>

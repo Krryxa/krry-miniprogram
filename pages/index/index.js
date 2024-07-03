@@ -46,4 +46,10 @@ Page({
       }
     })
   },
+
+  jumpDetail() {
+    wx.navigateTo({
+      url: `../detail/detail?id=1&name=${this.data.userInfo.nickName}`,
+    })
+  },
 })

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    mytest: '哈哈哈哈',
+    params: {},
     listSelected: ['kv'],
     list: [
       {
@@ -35,7 +35,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      params: options
+    })
+    console.log('url参数：', options)
   },
 
   /**
@@ -95,9 +98,20 @@ Page({
   },
 
   /**
-   * 用户点击右上角分享
+   * 分享给朋友
    */
   onShareAppMessage: function () {
+    return {
+      title: '分享到个人啦~~~',
+      imageUrl: 'https://ainyi.com/resource/scenery/14.avif',
+    }
+  },
 
-  }
+  // 分享朋友圈
+  onShareTimeline() {
+    return {
+      title: '分享到朋友圈啦~~~',
+      imageUrl: 'https://ainyi.com/resource/scenery/14.avif',
+    }
+  },
 })

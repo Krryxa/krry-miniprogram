@@ -1,5 +1,4 @@
 {
-  "entryPagePath": "pages/detail/detail",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",

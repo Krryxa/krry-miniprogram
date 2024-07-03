@@ -26,7 +26,12 @@ page {
 }
 
 .usermotto {
-  margin-top: 140px;
+  margin-top: 100px;
+}
+
+.jump-btn {
+  color: #f60;
+  font-size: medium;
 }
 
 .avatar-wrapper {

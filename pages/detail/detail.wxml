@@ -1,9 +1,8 @@
 <!--pages/detail/detail.wxml-->
 <wxs src="../../utils/wutils.wxs" module="util" />
 <view>
-  {{mytest}}
-  详情页~~~
-  <text>{{mytest}}</text>
+  <view>昵称：{{params.name}}</view>
+  <view>id: {{params.id}}</view>
   <checkbox-group bindchange="onchange">
     <label wx:for="{{list}}" wx:key="{{item.value}}">
       <view>
