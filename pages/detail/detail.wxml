@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+<wxs src="../../utils/wutils.wxs" module="util" />
+<view>
+  {{mytest}}
+  详情页~~~
+  <text>{{mytest}}</text>
+  <checkbox-group bindchange="onchange">
+    <label wx:for="{{list}}" wx:key="{{item.value}}">
+      <view>
+        <block wx:if="{{util.includes(listSelected, item.value)}}">匹配上了</block>
+        <block wx:elif="{{ item.value === 'bv' }}">value是bv</block>
+        <block wx:else>其他</block>
+        <checkbox value="{{item.value}}" checked="{{util.includes(listSelected, item.value)}}" />
+        <text>{{item.name}}</text>
+      </view>
+    </label>
+  </checkbox-group>
+  <swiper autoplay="true" interval="2000" circular="true">
+    <swiper-item wx:for="{{images}}" wx:key="index">
+      <image src="../../images/{{item}}.jpg" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+  <view wx:for="{{blog}}" wx:key="{{item.id}}">
+    {{index+1}}.
+    <text>{{item.title}}</text>
+  </view>
+</view>
