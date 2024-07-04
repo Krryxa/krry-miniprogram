@@ -1,5 +1,5 @@
 <!--pages/detail/detail.wxml-->
-<wxs src="../../utils/wutils.wxs" module="util" />
+<wxs src="/utils/wutils.wxs" module="util" />
 <view>
   <view>昵称：{{params.name}}</view>
   <view>id: {{params.id}}</view>
@@ -16,7 +16,7 @@
   </checkbox-group>
   <swiper autoplay="true" interval="2000" circular="true">
     <swiper-item wx:for="{{images}}" wx:key="index">
-      <image src="../../images/{{item}}.jpg" mode="aspectFill"></image>
+      <image src="/images/{{item}}.jpg" mode="aspectFill"></image>
     </swiper-item>
   </swiper>
   <view wx:for="{{blog}}" wx:key="{{item.id}}">
