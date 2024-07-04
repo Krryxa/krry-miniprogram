@@ -13,6 +13,7 @@ Page({
     canIUseNicknameComp: wx.canIUse('input.type.nickname'),
   },
   bindViewTap() {
+    // 不能跳到 tabbar 页面，所以这里不会跳转
     wx.navigateTo({
       url: '../logs/logs'
     })
